@@ -514,7 +514,7 @@ MonoBehaviour:
   readFileName: jellyfish.json
   readOnStart: 0
   playOnStart: 0
-  writeFileName: saved.json
+  writeFileName: saved.latk
   useTimestamp: 1
   writePressure: 0
   createFrameWithLayer: 1
@@ -1783,7 +1783,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1662888908
 MonoBehaviour:
   m_ObjectHideFlags: 0
