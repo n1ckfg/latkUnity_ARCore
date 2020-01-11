@@ -511,10 +511,10 @@ MonoBehaviour:
   pushRange: 0.05
   eraseRange: 0.05
   colorPickRange: 0.05
-  readFileName: jellyfish.json
+  readFileName: jellyfish.latk
   readOnStart: 0
   playOnStart: 0
-  writeFileName: saved.latk
+  writeFileName: arcore.latk
   useTimestamp: 1
   writePressure: 0
   createFrameWithLayer: 1
