@@ -4,3 +4,9 @@
 [submodule "Assets/latkxARCore"]
 	path = Assets/latkxARCore
 	url = https://github.com/n1ckfg/latkxARCore
+[submodule "Assets/latkxSpeechAndroid"]
+	path = Assets/latkxSpeechAndroid
+	url = https://github.com/n1ckfg/latkxSpeechAndroid
+[submodule "Assets/latkxGDrive"]
+	path = Assets/latkxGDrive
+	url = https://github.com/n1ckfg/latkxGDrive

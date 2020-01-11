@@ -460,7 +460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightningArtist: {fileID: 47}
-  tangoButtons: {fileID: 548765353}
+  tangoButtons: {fileID: 0}
   drawMode: 0
   depthTarget: {fileID: 1739866722}
   rotoEnabled: 0
@@ -481,13 +481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62906993b5f7c4869995b8ade83c5ba0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brushMode: 0
-  brushMat:
-  - {fileID: 2100000, guid: 7ff5f226683f27a4f8e5be4f5a466cba, type: 2}
-  - {fileID: 2100000, guid: 20f8c860059c3cf4c80536b089551ae8, type: 2}
-  - {fileID: 2100000, guid: d505a115c8f8a8b44bd355bcd030e3e4, type: 2}
   target: {fileID: 18}
-  scaleRef: {fileID: 0}
   layerPrefab: {fileID: 114288204717375812, guid: a3f692cf9448fdf4dbc65e783fad83d1,
     type: 3}
   framePrefab: {fileID: 11408600, guid: a15481ca94e650549a5cb0e614ef8fe2, type: 3}
@@ -496,32 +490,41 @@ MonoBehaviour:
   audio: {fileID: 0}
   animator: {fileID: 0}
   floorRen: {fileID: 25}
+  animatorRen: []
+  brushMode: 0
+  brushMat:
+  - {fileID: 2100000, guid: 7ff5f226683f27a4f8e5be4f5a466cba, type: 2}
+  - {fileID: 2100000, guid: 20f8c860059c3cf4c80536b089551ae8, type: 2}
+  - {fileID: 2100000, guid: d505a115c8f8a8b44bd355bcd030e3e4, type: 2}
   mainColor: {r: 0.2794118, g: 0.6123733, b: 1, a: 1}
   endColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   useEndColor: 0
-  drawTrailLength: 4
-  strokeLife: 5
-  killStrokes: 0
-  readFileName: jellyfish.json
-  readOnStart: 0
-  playOnStart: 0
-  writeFileName: saved.json
-  useTimestamp: 1
-  createFrameWithLayer: 1
-  newLayerOnRead: 0
-  drawWhilePlaying: 1
   fillMeshStrokes: 0
   refineStrokes: 1
-  fillEmptyMethod: 2
+  drawWhilePlaying: 1
+  strokeLife: 5
+  killStrokes: 0
+  useCollisions: 0
   minDistance: 0
   brushSize: 0.02
-  frameInterval: 12
-  eraseRange: 0.05
-  pushRange: 0.05
-  colorPickRange: 0.05
   pushSpeed: 0.01
+  pushRange: 0.05
+  eraseRange: 0.05
+  colorPickRange: 0.05
+  readFileName: jellyfish.latk
+  readOnStart: 0
+  playOnStart: 0
+  writeFileName: arcore.latk
+  useTimestamp: 1
+  writePressure: 0
+  createFrameWithLayer: 1
+  newLayerOnRead: 0
+  fillEmptyMethod: 2
+  frameInterval: 12
   onionSkinRange: 5
-  animatorRen: []
+  drawTrailLength: 4
+  frameBrightNormal: 0.5
+  frameBrightDim: 0.05
   layerList: []
   currentLayer: 0
   isDrawing: 0
@@ -532,11 +535,9 @@ MonoBehaviour:
   showOnionSkin: 0
   armReadFile: 0
   armWriteFile: 0
-  frameBrightNormal: 0.5
-  frameBrightDim: 0.05
-  useCollisions: 0
   lastHit: {x: 0, y: 0, z: 0}
   thisHit: {x: 0, y: 0, z: 0}
+  url: 
 --- !u!1 &62498923
 GameObject:
   m_ObjectHideFlags: 0
@@ -1039,8 +1040,9 @@ GameObject:
   - component: {fileID: 13}
   - component: {fileID: 47}
   - component: {fileID: 46}
-  - component: {fileID: 548765353}
   - component: {fileID: 548765354}
+  - component: {fileID: 548765355}
+  - component: {fileID: 548765353}
   m_Layer: 0
   m_Name: LIGHTNING_ARTIST
   m_TagString: Untagged
@@ -1057,12 +1059,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 548765352}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64a46af1af63548a78b360a6d911bb12, type: 3}
+  m_Script: {fileID: 11500000, guid: c46ad2de9fe02584cbb6f6adf3293324, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lightningArtist: {fileID: 47}
   showHideGeneric: {fileID: 286284541}
   brushInputTango: {fileID: 46}
+  speechTrigger: {fileID: 1662888908}
 --- !u!114 &548765354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1080,6 +1083,19 @@ MonoBehaviour:
   brushInputARCore: {fileID: 46}
   depthTarget: {fileID: 1739866722}
   SearchingForPlaneUI: {fileID: 0}
+--- !u!114 &548765355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548765352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffb7e355fb9756c44af0d8324b7ea0a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  latk: {fileID: 47}
 --- !u!1 &557929744
 GameObject:
   m_ObjectHideFlags: 0
@@ -1232,7 +1248,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &676495535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1752,6 +1768,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1468114523}
   m_CullTransparentMesh: 0
+--- !u!1 &1662888907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1662888909}
+  - component: {fileID: 1662888908}
+  m_Layer: 0
+  m_Name: SPEECH
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1662888908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662888907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1389195145d5684cb9b163eaa926761, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  latk: {fileID: 47}
+  result: 
+  isListening: 0
+  armed: 0
+--- !u!4 &1662888909
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662888907}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1708258546
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1783,7 +1846,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708258547}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92a4cf446a0c7334aaceb5457be27894, type: 3}
   m_Name: 
