@@ -1065,6 +1065,7 @@ MonoBehaviour:
   lightningArtist: {fileID: 47}
   showHideGeneric: {fileID: 286284541}
   brushInputTango: {fileID: 46}
+  speechTrigger: {fileID: 0}
 --- !u!114 &548765354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1247,7 +1248,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &676495535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1783,7 +1784,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1662888908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1845,7 +1846,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708258547}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92a4cf446a0c7334aaceb5457be27894, type: 3}
   m_Name: 
