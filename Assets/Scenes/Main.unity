@@ -476,6 +476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lightningArtist: {fileID: 47}
   tangoButtons: {fileID: 0}
+  colorPalette: {fileID: 286284541}
   drawMode: 0
   depthTarget: {fileID: 1739866722}
   rotoEnabled: 0
@@ -757,7 +758,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 286284539}
-  m_LocalRotation: {x: 0, y: 1, z: -0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children:
@@ -766,7 +767,7 @@ Transform:
   - {fileID: 557929745}
   m_Father: {fileID: 642643032}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 180, y: 0, z: -180}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &286284541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -782,10 +783,9 @@ MonoBehaviour:
   root: {fileID: 642643032}
   pointer: {fileID: 0}
   target:
-  - {fileID: 385783731}
+  - {fileID: 557929744}
   - {fileID: 1903626520}
   - {fileID: 1410651417}
-  - {fileID: 557929744}
   isTracking: 0
 --- !u!114 &286284542
 MonoBehaviour:
@@ -809,6 +809,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 18}
     m_Modifications:
+    - target: {fileID: 1811471822144674, guid: b120cbace0a83544e99baddd1bb58368, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4758083446028642, guid: b120cbace0a83544e99baddd1bb58368, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -860,12 +864,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f7257ce3dfc0fe44c8f1c23caa3ff4f0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b120cbace0a83544e99baddd1bb58368, type: 3}
---- !u!1 &385783731 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1811471822144674, guid: b120cbace0a83544e99baddd1bb58368,
-    type: 3}
-  m_PrefabInstance: {fileID: 385783730}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &385783732 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4758083446028642, guid: b120cbace0a83544e99baddd1bb58368,
@@ -1169,17 +1167,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 557929744}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e6e29feb96e10d40b46d5bbb02ecb8e, type: 3}
+  m_Script: {fileID: 11500000, guid: fadb6079bd7bf6142a7794994c0e8b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickMode: 1
   showHideGeneric: {fileID: 286284541}
-  pointer: {fileID: 18}
   minBound: {fileID: 1438915734}
   fixX: 0
   fixY: 0
   fixZ: 0
   thumb: {fileID: 140798222}
-  dragging: 0
 --- !u!114 &557929747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1248,7 +1245,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 642643031}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.16, y: -0.5, z: 2}
+  m_LocalPosition: {x: 0.1, y: 0, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 286284540}
@@ -2084,24 +2081,22 @@ Transform:
 --- !u!114 &1903626522
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114359560020453072, guid: 0111c3150beeb274791e359aa896cb97,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903626520}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e6e29feb96e10d40b46d5bbb02ecb8e, type: 3}
+  m_Script: {fileID: 11500000, guid: fadb6079bd7bf6142a7794994c0e8b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickMode: 1
   showHideGeneric: {fileID: 286284541}
-  pointer: {fileID: 18}
   minBound: {fileID: 2132009624}
   fixX: 0
   fixY: 0
   fixZ: 0
   thumb: {fileID: 687571378}
-  dragging: 0
 --- !u!114 &1903626523
 MonoBehaviour:
   m_ObjectHideFlags: 0
