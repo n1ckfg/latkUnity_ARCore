@@ -460,7 +460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightningArtist: {fileID: 47}
-  tangoButtons: {fileID: 548765353}
+  tangoButtons: {fileID: 0}
   drawMode: 0
   depthTarget: {fileID: 1739866722}
   rotoEnabled: 0
@@ -1040,9 +1040,9 @@ GameObject:
   - component: {fileID: 13}
   - component: {fileID: 47}
   - component: {fileID: 46}
-  - component: {fileID: 548765353}
   - component: {fileID: 548765354}
   - component: {fileID: 548765355}
+  - component: {fileID: 548765353}
   m_Layer: 0
   m_Name: LIGHTNING_ARTIST
   m_TagString: Untagged
@@ -1059,13 +1059,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 548765352}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64a46af1af63548a78b360a6d911bb12, type: 3}
+  m_Script: {fileID: 11500000, guid: c46ad2de9fe02584cbb6f6adf3293324, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lightningArtist: {fileID: 47}
   showHideGeneric: {fileID: 286284541}
   brushInputTango: {fileID: 46}
-  speechTrigger: {fileID: 0}
+  speechTrigger: {fileID: 1662888908}
 --- !u!114 &548765354
 MonoBehaviour:
   m_ObjectHideFlags: 0
